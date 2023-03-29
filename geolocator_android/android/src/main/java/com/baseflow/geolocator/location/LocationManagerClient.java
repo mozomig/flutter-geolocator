@@ -212,15 +212,15 @@ class LocationManagerClient implements LocationClient, LocationListener {
     float desiredAccuracy =
         locationOptions != null ? accuracyToFloat(locationOptions.getAccuracy()) : 50;
 
-    if (isBetterLocation(location, currentBestLocation)
-        && location.getAccuracy() <= desiredAccuracy) {
+    //if (isBetterLocation(location, currentBestLocation)
+      //  && location.getAccuracy() <= desiredAccuracy) {
       this.currentBestLocation = location;
 
       if (this.positionChangedCallback != null) {
         nmeaClient.enrichExtrasWithNmea(location);
         this.positionChangedCallback.onPositionChanged(currentBestLocation);
       }
-    }
+    //}
   }
 
   @TargetApi(28)
