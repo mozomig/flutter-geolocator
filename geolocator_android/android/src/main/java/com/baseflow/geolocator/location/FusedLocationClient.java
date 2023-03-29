@@ -87,8 +87,8 @@ class FusedLocationClient implements LocationClient {
 
     if (options != null) {
       locationRequest.setPriority(toPriority(options.getAccuracy()));
-      locationRequest.setInterval(1000);
-      locationRequest.setFastestInterval(500);
+      locationRequest.setInterval(800);
+      locationRequest.setFastestInterval(300);
       locationRequest.setSmallestDisplacement(options.getDistanceFilter());
     }
 
