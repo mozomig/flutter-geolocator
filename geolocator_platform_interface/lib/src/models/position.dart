@@ -136,8 +136,8 @@ class Position {
       accuracy: positionMap['accuracy'] ?? 0.0,
       heading: positionMap['heading'] ?? 0.0,
       floor: positionMap['floor'],
-      speed: positionMap['speed'] ?? 0.0,
-      speedAccuracy: positionMap['speed_accuracy'] ?? 0.0,
+      speed: positionMap['speed'] ?? -1.0,
+      speedAccuracy: positionMap['speed_accuracy'] ?? -1.0,
       isMocked: positionMap['is_mocked'] ?? false,
     );
   }
