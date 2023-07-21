@@ -1,3 +1,15 @@
+## 4.2.0
+
+* Introduces the `setOngoing` flag in `ForegroundNotificationConfig` to make notification persistent.
+
+## 4.1.9
+
+* Resolves an issue where the location service failed to stop properly upon timeout of the location stream.
+
+## 4.1.8
+
+* Adds compatibility with Android Gradle Plugin 8.0.
+
 ## 4.1.7
 
 * Fixes an issue where checking location service availability hangs indefinately.
